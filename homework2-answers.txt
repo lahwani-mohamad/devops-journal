@@ -1,0 +1,15 @@
+1. Why does Git have a staging area?
+The staging area lets us choose which changes to include in the next commit. For example,
+ if I change two files but only want to commit one, I can stage only that file.
+
+2. What is the difference between git fetch and git pull?
+git fetch downloads new commits from the remote repository without changing my current branch.
+ git pull downloads the changes and also integrates them into my current branch.
+
+3. Which kinds of files belong in .gitignore, and why?
+Files like .env, .log, and __pycache__/ should be ignored because they may contain secrets, temporary data, or generated files.
+ These files usually do not belong in the repository.
+
+4. When does a merge become a fast-forward, and when does Git create a merge commit?
+A fast-forward happens when the current branch has no new commits since the branches separated, so Git can just move the branch pointer forward.
+ Git normally creates a merge commit when both branches have new commits and their histories need to be combined.
