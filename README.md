@@ -1,4 +1,4 @@
-# My DevOps Learning Journal
+# My DevOps Learning and Practice Journal
 
 I'm Mohamad Lahwani, a Computer Science graduate learning DevOps.
 
