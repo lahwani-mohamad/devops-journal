@@ -1,0 +1,18 @@
+1. A bad commit is already on GitHub and your teammates pulled it. Do you use revert or reset? Why?
+I would use git revert because it creates a new commit that undoes the bad changes.
+It keeps the commit history and is safer when other developers have already pulled the code.
+
+2. What is the difference between merge and rebase? When is rebase dangerous?
+Merge combines changes from two branches and keeps their history.
+Rebase moves commits onto another base and rewrites their history.
+Rebase is dangerous when the commits have already been pushed and shared with other developers.
+
+3. Your team has 5 developers and releases every week. Which branching strategy would you choose: GitHub Flow, Git Flow or trunk-based? Why?
+I would choose GitHub Flow because it is simple and works well for a small team.
+Each developer can create a short feature branch, open a pull request, and merge it into main after review.
+It also supports frequent releases without managing many long-lived branches.
+
+4. Someone committed secrets.env with a real password and pushed it. Is deleting the file in a new commit enough? What must the team do?
+No, deleting the file is not enough because the password still exists in Git history.
+The team must revoke or rotate the exposed password immediately and remove the secret from Git history where possible.
+They should also add secrets.env to .gitignore and use environment variables or a secrets manager to store passwords safely.
